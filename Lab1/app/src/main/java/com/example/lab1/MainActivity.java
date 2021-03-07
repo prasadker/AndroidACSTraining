@@ -25,8 +25,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String endpoint = "https://prasad-testacs.communication.azure.com";
-    final String userAccessToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMiIsIng1dCI6IjNNSnZRYzhrWVNLd1hqbEIySmx6NTRQVzNBYyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmJhOTRlMDI4LTMxYzEtNDJkZC1hYzA5LTRhZWY0ZTJhMmQyOF8wMDAwMDAwOC1hZTc0LWUzNjktZjZjNy01OTNhMGQwMDIxZmEiLCJzY3AiOjE3OTIsImNzaSI6IjE2MTUxNTIyMzQiLCJpYXQiOjE2MTUxNTIyMzQsImV4cCI6MTYxNTIzODYzNCwiYWNzU2NvcGUiOiJjaGF0IiwicmVzb3VyY2VJZCI6ImJhOTRlMDI4LTMxYzEtNDJkZC1hYzA5LTRhZWY0ZTJhMmQyOCJ9.tnrCZlwaSc84Lr6VNqAaQAA-xQELTLka26zp_y4WVnk66gn6D7pNddXJOHSODMbL3hF_s0gGGRDrXgo3ZGnw_rUI593c4vcu3DNkc12Cd7TYYKS-6x1QNK8lbhYT6zjBtmrb8PjdotM-4glFa7-6cqdM6id9e2rm8Plty67ybttoqlDY5WMZ-hV0nm8pLXKi5dREUMZvjAuwUDE4NdxjYE5llmMrY-5qPQ1UC5NfK4ytvbX70SaH9EzjF1ujWrqGtKOdqvLMq4smv51I2YrgMuhnm2Let93G301ClgBsGMhH5E2Su_ht2wI-LXBTL26yD-GPJYsikqfVe3SWkqVyYQ";
+    final String endpoint = "<ACS Resource>";
+    final String userAccessToken = "<User Token>";
 
     String chatThreadId;
     ChatAsyncClient client;
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         //  The list of ChatParticipant to be added to the thread.
         List<ChatParticipant> participants = new ArrayList<>();
         // The communication user ID you created before, required.
-        String id = "8:acs:ba94e028-31c1-42dd-ac09-4aef4e2a2d28_00000008-9f52-3f73-51b9-a43a0d00c4f7"; //"<user_id>";
+        String id = "<user_id>";
         // The display name for the thread participant.
         String displayName = "initial participant";
         participants.add(new ChatParticipant()
